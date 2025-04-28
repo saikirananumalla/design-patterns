@@ -106,7 +106,6 @@ _Focus: Real-world patterns frequently used in modern applications._
 Each design pattern includes:
 - A simple, self-contained Java example
 - Comments explaining key concepts
-- A short usage demo (where applicable)
 
 Feel free to explore, fork, or contribute!
 
