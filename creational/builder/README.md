@@ -21,6 +21,16 @@ The **Builder Pattern** separates the construction of a complex object from its 
 
 This improves readability, supports flexible configurations, and avoids constructor overload.
 
+
+---
+
+## 🧠 Special Notes & Comparisons
+
+- **Builder vs Factory Method**: Factory is for creating different types of objects. Builder is for creating different *representations* or *configurations* of the same complex object.
+- **Builder vs Abstract Factory**: Abstract Factory returns whole product families immediately. Builder constructs products step-by-step and allows skipping steps.
+- The `Director` is optional — useful when you have reusable build routines, but not required.
+- Builder is often used when constructors get out of hand (a.k.a. telescoping constructors).
+
 ---
 
 ## 📊 Diagram
