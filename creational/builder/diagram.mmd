@@ -1,0 +1,28 @@
+classDiagram
+    class Burger {
+        -String bun
+        -int patties
+        -boolean cheese
+        -boolean lettuce
+        -boolean tomato
+        -boolean grilled
+        +display()
+    }
+
+    class BurgerBuilder {
+        +setBun(String)
+        +setPatties(int)
+        +addCheese()
+        +addLettuce()
+        +addTomato()
+        +grill()
+        +build() : Burger
+    }
+
+    class BurgerDirector {
+        +createVeggieBurger() : Burger
+        +createCheeseLoversBurger() : Burger
+    }
+
+    BurgerBuilder --> Burger
+    BurgerDirector --> BurgerBuilder
