@@ -1,0 +1,23 @@
+classDiagram
+    class Shape {
+        +cloneShape()
+        +display()
+    }
+
+    class Circle {
+        -int x
+        -int y
+        -int radius
+        +cloneShape()
+        +display()
+    }
+
+    class Rectangle {
+        -int width
+        -int height
+        +cloneShape()
+        +display()
+    }
+
+    Shape <|.. Circle
+    Shape <|.. Rectangle
