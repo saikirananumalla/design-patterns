@@ -1,0 +1,33 @@
+classDiagram
+    class Logistics {
+        +createTransport()
+        +planDelivery()
+    }
+
+    class RoadLogistics {
+        +createTransport()
+    }
+
+    class SeaLogistics {
+        +createTransport()
+    }
+
+    class Transport {
+        +deliver()
+    }
+
+    class Truck {
+        +deliver()
+    }
+
+    class Ship {
+        +deliver()
+    }
+
+    Logistics <|-- RoadLogistics
+    Logistics <|-- SeaLogistics
+    Transport <|.. Truck
+    Transport <|.. Ship
+    RoadLogistics --> Truck : creates
+    SeaLogistics --> Ship : creates
+    Logistics --> Transport : uses

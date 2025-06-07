@@ -1,0 +1,46 @@
+classDiagram
+    FurnitureFactory <|.. ModernFurnitureFactory
+    FurnitureFactory <|.. VictorianFurnitureFactory
+
+    FurnitureFactory : +createChair()
+    FurnitureFactory : +createSofa()
+
+    Chair <|.. ModernChair
+    Chair <|.. VictorianChair
+
+    Sofa <|.. ModernSofa
+    Sofa <|.. VictorianSofa
+
+    class Chair {
+        +sitOn()
+    }
+
+    class Sofa {
+        +lieOn()
+    }
+
+    class ModernFurnitureFactory {
+        +createChair()
+        +createSofa()
+    }
+
+    class VictorianFurnitureFactory {
+        +createChair()
+        +createSofa()
+    }
+
+    class ModernChair {
+        +sitOn()
+    }
+
+    class VictorianChair {
+        +sitOn()
+    }
+
+    class ModernSofa {
+        +lieOn()
+    }
+
+    class VictorianSofa {
+        +lieOn()
+    }
