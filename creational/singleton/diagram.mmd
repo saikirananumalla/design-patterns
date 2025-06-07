@@ -1,0 +1,13 @@
+classDiagram
+    class AppLogger {
+        -static AppLogger instance
+        -AppLogger()
+        +static getInstance() AppLogger
+        +log(String)
+    }
+
+    class SingletonDemo {
+        +main(String[])
+    }
+
+    SingletonDemo --> AppLogger : uses
