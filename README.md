@@ -24,7 +24,6 @@ _Focus: Object creation mechanisms, increasing flexibility and reuse of code._
 - Abstract Factory
 - Builder
 - Prototype
-- Constructor Pattern
 
 ---
 
